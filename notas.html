@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Notas</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <h1>Mis Notas</h1>
+
+  <div id="formulario">
+    <textarea
+      id="textoNota"
+      placeholder="Escribe una nota o una lista (una línea por ítem)"
+    ></textarea>
+    <br>
+
+    <label>Color:</label>
+    <input type="color" id="colorNota" value="#fff3a0">
+    <br><br>
+
+    <label>Forma:</label>
+    <select id="formaNota">
+      <option value="cuadrado">Cuadrado</option>
+      <option value="circulo">Círculo</option>
+    </select>
+
+    <br><br>
+    <button id="btnAgregar">Agregar</button>
+  </div>
+
+  <div id="notas"></div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

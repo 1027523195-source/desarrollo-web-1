@@ -1,0 +1,125 @@
+/* GENERAL */
+body {
+  font-family: 'Orbitron', sans-serif; /* tipografía futurista */
+  background: linear-gradient(135deg, #690606, #690606, #690606);
+  color: #ffffff;
+  padding: 0px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(250, 250, 250);
+  text-shadow: 0 0 10px rgb(2, 3, 3), 0 0 20px rgb(2, 2, 2), 0 0 30px rgb(0, 0, 0);
+}
+
+/* FORMULARIO */
+#formulario {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+textarea {
+  padding: 15px;
+  width: 300px;
+  height: 100px;
+  font-size: 16px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #0ff;
+  outline: none;
+  box-shadow: 0 0 10px #0ff;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  box-shadow: 0 0 20px #0ff;
+  border-color: #0ff;
+}
+
+button, select, input[type="color"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 2px solid #0ff;
+  background: rgba(0,0,0,0.6);
+  color: #0ff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0ff;
+  transition: 0.3s;
+}
+
+button:hover, select:hover, input[type="color"]:hover {
+  box-shadow: 0 0 20px #0ff;
+}
+
+/* CONTENEDOR DE NOTAS */
+#notas {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 2px dashed rgb(255, 255, 255);
+  background: rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgb(0, 0, 0) inset;
+  overflow: hidden;
+}
+
+/* NOTAS */
+.nota {
+  position: absolute;
+  min-width: 150px;
+  min-height: 120px;
+  padding: 20px;
+  color: #000;
+  background: rgba(0,255,255,0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+  border: 1px solid #0ff;
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nota:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff, 0 0 30px #0ff inset;
+}
+
+/* Contenedor interno de texto */
+.nota .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+/* FORMAS */
+.cuadrado {
+  border-radius: 10px;
+}
+
+.circulo {
+  border-radius: 50%;
+}
+
+/* LISTAS */
+.nota ul {
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.nota li {
+  margin-bottom: 5px;
+}
